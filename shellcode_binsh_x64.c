@@ -4,7 +4,7 @@ $ Infos $
 *********
 Created by: vida
 Github: https://github.com/vida00/
-Command: excve("/bin/sh", NULL, NULL);
+Command: execve("/bin/sh", NULL, NULL);
 For: linux x86_64
 
 *****************
