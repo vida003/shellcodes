@@ -1,3 +1,5 @@
+# Requirements: old kernel, gcc, gcc-multillib, nasm, ld
+
 ### Shellcode 25 bytes - execve("/bin/sh", NULL, NULL); from linux x86_64
 ![image](https://user-images.githubusercontent.com/77762068/129826615-7670fa60-91d2-4dbf-a8f3-3feab7ffcacd.png)
 
