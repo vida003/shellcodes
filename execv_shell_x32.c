@@ -5,7 +5,7 @@ $ INFOS $
 Author: vida
 Github: https://github.com/vida00/
 Command: execve("/bin/sh", NULL, NULL);
-Arch: Linux x86_64
+Arch: Linux x86
 Lenght: 21 bytes
 
 *****************
