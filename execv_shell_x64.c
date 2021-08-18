@@ -6,6 +6,7 @@ Author: vida
 Github: https://github.com/vida00/
 Command: excve("/bin/sh", NULL, NULL);
 Arch: linux x86_64
+Lenght: 25 bytes
 
 *****************
 $ Assembly Code $
