@@ -7,3 +7,6 @@
 
 ### Shellcode 21 bytes - execve("/bin/sh", NULL, NULL); from x86
 ![image](https://user-images.githubusercontent.com/77762068/129827033-255ddbda-9a20-489c-a196-8da784ae1014.png)
+
+### Shellcode 26 bytes - jmp execve("/bin/sh", NULL, NULL); from x86
+![image](https://user-images.githubusercontent.com/77762068/129828351-642d3867-da90-491e-81c0-d95fd0f70c5c.png)
