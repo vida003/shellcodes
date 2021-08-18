@@ -7,6 +7,7 @@ Github: https://github.com/vida00/
 Command: excve("/bin/sh", NULL, NULL);
 Description: bypass AV with xor in "//bin/sh"
 Arch: linux x86_64
+Lenght: 33 bytes
 
 *****************
 $ Assembly Code $
